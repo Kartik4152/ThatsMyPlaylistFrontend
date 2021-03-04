@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+:root {
+  --background: #191414;
+  --foreground: #1db954;
+}
+
+.UserContainer {
+  display: flex;
+  width: 90vw;
+  padding: 0.5em;
+  margin: 1em;
+  border: white solid 1px;
+  border-radius: 0.2em;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 4px black;
+  gap: 1em;
+}
+
+/*Left Side Of The Flex*/
+.UserLeft {
+  display: flex;
+  flex: 4;
+  flex-direction: column;
+  align-items: left;
+  /* border: 1px solid white; */
+  gap: 1em;
+}
+
+.PlaylistMatch {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.PlaylistMatch a {
+  text-decoration: none;
+}
+.PlaylistMatchText {
+  font-family: "Raleway", sans-serif;
+  font-size: 3vw;
+  margin-right: 1em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.PlaylistMatch .UserButton {
+  font-size: 1em;
+  font-size: 3vw;
+  border-radius: 5vw;
+  border: white solid 1px;
+  padding: 0.2em 0.4em 0.2em 0.4em;
+  text-align: center;
+}
+
+.UserButton {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: "Nunito", sans-serif;
+  color: black;
+}
+.UserButton:hover {
+  color: white;
+  background-color: var(--background);
+}
+
+/*Right Side Of The Flex*/
+.UserRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  gap: 1em;
+  /* border: 1px solid white; */
+}
+.UserRight a {
+  text-decoration: none;
+}
+.UserPhoto {
+  height: 4em;
+  width: 4em;
+  border-radius: 2em;
+  border: white 1px solid;
+}
+
+.UserRight .UserButton {
+  border: white 2px solid;
+  padding: 0.4em;
+  border-radius: 6vw;
+  font-size: 3vw;
+}
+
+@media screen and (min-width: 48em) {
+  .UserContainer {
+    width: 70vw;
+    padding: 1em;
+  }
+  .PlaylistMatchText {
+    font-size: 1.2vw;
+  }
+  .PlaylistMatch .UserButton {
+    font-size: 1.2vw;
+  }
+  .UserPhoto {
+    height: 8em;
+    width: 8em;
+    border-radius: 4em;
+  }
+  .UserRight .UserButton {
+    font-size: 1.2vw;
+  }
+}

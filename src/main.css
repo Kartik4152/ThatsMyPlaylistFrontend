@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+
+:root {
+  --background: #191414;
+  --foreground: #1db954;
+}
+
+.container {
+  padding-top: 4em;
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  background: var(--background);
+  align-items: center;
+  flex-direction: column;
+}
+
+#heading-text {
+  color: #ffffff;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 6vw;
+}
+#playlist {
+  margin: 1em;
+  border-radius: 5em;
+  width: 75%;
+  height: 3em;
+  text-align: center;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+#playlist:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 48em) {
+  .container {
+    padding-top: 5em;
+  }
+  #heading-text {
+    font-size: 3vw;
+  }
+  #playlist {
+    width: 50%;
+  }
+}

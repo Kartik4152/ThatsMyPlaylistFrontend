@@ -1,0 +1,19 @@
+:root {
+  --background: #191414;
+  --foreground: #1db954;
+}
+
+#nav {
+  display: flex;
+  width: 100vw;
+  height: 3em;
+  background-color: var(--foreground);
+  box-shadow: 0 2px 4px black;
+  position: fixed;
+}
+
+@media screen and (min-width: 48em) {
+  #nav {
+    height: 4em;
+  }
+}
