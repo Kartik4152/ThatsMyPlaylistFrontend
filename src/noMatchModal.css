@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+
+.noMatchModalContainer {
+  height: auto;
+  width: 80vw;
+  background-color: rgb(240, 240, 240);
+  position: fixed;
+  top: 4em;
+  left: 10vw;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  align-items: center;
+  border-radius: 4px;
+  gap: 1em;
+}
+
+.noMatchModalText {
+  font-family: "Raleway", "sans-serif";
+  font-weight: bold;
+}
+
+.noMatchModalButton {
+  font-family: "Raleway", "sans-serif";
+  font-weight: bold;
+  border: #191414 2px solid;
+  color: #191414;
+  padding: 0.3em;
+  border-radius: 2vw;
+}
+.noMatchModalButton:hover {
+  color: white;
+  background-color: #191414;
+}
+
+@media screen and (min-width: 48em) {
+  .noMatchModalContainer {
+    top: 5em;
+  }
+}
