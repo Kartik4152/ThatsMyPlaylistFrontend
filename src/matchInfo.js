@@ -18,7 +18,7 @@ const Match=(props)=>{
                 }
             </div>
             <div className='UserRight'>
-                <img className='UserPhoto' src={props.photo!='default'?props.photo:'https://icon-library.com/images/default-user-icon/default-user-icon-4.jpg'} alt="userphoto"></img>
+                <img className='UserPhoto' src={props.photo!=='default'?props.photo:'https://icon-library.com/images/default-user-icon/default-user-icon-4.jpg'} alt="userphoto"></img>
                 <a href={`https://open.spotify.com/user/${props.id}`}><div className="UserButton">Profile</div></a>
             </div>
         </div>

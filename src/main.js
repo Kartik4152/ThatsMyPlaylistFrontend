@@ -67,7 +67,7 @@ const Main=()=>{
     return(
         <div className="container">
             <h1 id='heading-text'>Discover music like never before.</h1>
-            <input type="text" name="playlist" id="playlist" placeholder={isLoading?'Loading...':'Enter Spotify Playlist URL'} value={playlistUrl} onChange={handleChange}/>
+            <input type="text" name="playlist" id="playlist" placeholder={isLoading?"Loading...":"Enter Spotify Playlist URL"} value={playlistUrl} onChange={handleChange}/>
             {matchData.map((obj)=>{
                 return (
                     <Match photo={obj.userphoto} name={obj.username} id={obj.userid} matches={obj.matches} key={obj.userid}></Match>
