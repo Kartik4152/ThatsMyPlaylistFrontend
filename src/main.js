@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react';
 import Match from './matchInfo';
 import NoMatchModal from './noMatchModal';
 import './main.css'
-const Main=()=>{
+const Main=(props)=>{
     const [playlistUrl,setPlaylistUrl]=useState('');
     const handleChange=(e)=>{
         setPlaylistUrl(e.target.value);
@@ -18,12 +18,16 @@ const Main=()=>{
             playlistId=playlistId.split('?')[0];
             setPlaylistUrl('');
             setIsLoading(true);
-            const res=await fetch('https://thatsmyplaylist.herokuapp.com/',{
+            const res=await fetch('http://localhost:5000'||'https://thatsmyplaylist.herokuapp.com/',{
                 method:'POST',
                 headers:{
                     "Content-Type":"application/json"
                 },
-                body:JSON.stringify({playlistId,minMatch:30})
+                body:JSON.stringify({
+                    playlistId:playlistId,
+                    songPercentage:props.controls.songPercentage,
+                    artistPercentage:props.controls.artistPercentage
+                })
             });
             if(!res.ok)
             {

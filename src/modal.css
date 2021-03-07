@@ -17,16 +17,16 @@
 
 .modalText {
   font-family: "Raleway", "sans-serif";
-  font-weight: bold;
+  font-size: 3vw;
 }
 
 .modalButton {
+  font-size: 3vw;
   font-family: "Raleway", "sans-serif";
-  font-weight: bold;
-  border: #191414 2px solid;
+  border: #191414 1px solid;
   color: #191414;
   padding: 0.3em;
-  border-radius: 2vw;
+  border-radius: 5vw;
 }
 .modalButton:hover {
   color: white;
@@ -36,5 +36,11 @@
 @media screen and (min-width: 48em) {
   .modalContainer {
     top: 5em;
+  }
+  .modalText {
+    font-size: 1.2vw;
+  }
+  .modalButton {
+    font-size: 1.2vw;
   }
 }

@@ -4,16 +4,64 @@
 }
 
 #nav {
+  transition-property: top, height;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
   display: flex;
+  flex-direction: column;
   width: 100vw;
-  height: 3em;
+  height: 100vh;
+  top: calc(3em - 100vh);
   background-color: var(--foreground);
   box-shadow: 0 2px 4px black;
   position: fixed;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#controlsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  flex: 100;
+  padding: 1em;
+  gap: 2em;
+}
+#controlsContainer h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 6vw;
+}
+#c1,
+#c2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 3.5vw;
+}
+
+#settings {
+  flex: 1;
+  font-size: 2.5em;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 48em) {
   #nav {
-    height: 4em;
+    top: calc(4em - 100vh);
+  }
+  #settings {
+    font-size: 3em;
+  }
+  #c1,
+  #c2 {
+    font-size: 1.5vw;
+  }
+  #controlsContainer h1 {
+    font-size: 3vw;
   }
 }
