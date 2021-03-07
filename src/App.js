@@ -5,8 +5,8 @@ import Modal from './modal';
 
 const App=()=>{
 const [controls,setControls]=useState({
-        songPercentage:15,
-        artistPercentage:15
+        songPercentage:10,
+        artistPercentage:10
 });
 const [isVisible,setIsVisible]=useState(true);
 return (
