@@ -18,7 +18,7 @@ const Main=(props)=>{
             playlistId=playlistId.split('?')[0];
             setPlaylistUrl('');
             setIsLoading(true);
-            const res=await fetch('http://localhost:5000'||'https://thatsmyplaylist.herokuapp.com/',{
+            const res=await fetch('https://thatsmyplaylist.herokuapp.com/',{
                 method:'POST',
                 headers:{
                     "Content-Type":"application/json"
